@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stores",
+  "info": {
+    "singularName": "store",
+    "pluralName": "stores",
+    "displayName": "store",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "location": {
+      "type": "json"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "openingHours": {
+      "type": "json"
+    },
+    "urlImage": {
+      "type": "string"
+    }
+  }
+}
