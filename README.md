@@ -1,16 +1,38 @@
-# 🚀 Getting started with Strapi
+# Strapi Backend
+This repository contains the backend for your application built with Strapi. It provides a GraphQL API for managing stores
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
 
-### `develop`
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
 
-```
-npm run develop
-# or
-yarn develop
-```
+### `Installation`
+Clone the repository:
+
+    git clone <https://github.com/sagiv1996/crop-store-backend>
+
+Navigate to the project directory:
+
+    cd strapi-backend
+
+Install the dependencies:
+
+    npm install
+
+- Create a .env file in the root directory of the project.
+- Add the following environment variables to the .env file:
+    - HOST=<your-host>
+    - PORT=<your-port>
+    - APP_KEYS=<your-app-keys>
+    - API_TOKEN_SALT=<your-api-token-salt>
+    - ADMIN_JWT_SECRET=<your-admin-jwt-secret>
+    - TRANSFER_TOKEN_SALT=<your-transfer-token-salt>
+    - DATABASE_CLIENT=sqlite
+    - DATABASE_FILENAME=.tmp/data.db
+    - JWT_SECRET=<your-jwt-secret>
+ 
+
+Start the server:
+    
+    npm run develop
 
 ### `start`
 
@@ -18,40 +40,32 @@ Start your Strapi application with autoReload disabled. [Learn more](https://doc
 
 ```
 npm run start
-# or
-yarn start
 ```
 
 ### `build`
 
 Build your admin panel. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-build)
 
-```
-npm run build
-# or
-yarn build
-```
+    npm run build
 
-## ⚙️ Deployment
+### `start`
 
-Strapi gives you many possible deployment options for your project. Find the one that suits you on the [deployment section of the documentation](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html).
+Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-start)
 
-## 📚 Learn more
+    npm run start
 
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://docs.strapi.io) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
+### `API Endpoints`
+The backend provides the following GraphQL API endpoints:
+- `/graphql` - Access the GraphQL Playground for interacting with the API.
 
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
 
-## ✨ Community
+### `Usage`
+- Access the GraphQL Playground at http://<your-host>:<your-port>/graphql
+- Use the available GraphQL queries and mutations to interact with the API and manage stores.
 
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
 
----
-
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+### Example
+- fetch single record by Id
+![Screenshot 2023-07-03 231443](https://github.com/sagiv1996/crop-store-backend/assets/71065719/b0360571-6b9a-43d5-8fc4-b4c11c618f4f)
+- fetch all records, and add distance from this location
+![Screenshot 2023-07-03 231519](https://github.com/sagiv1996/crop-store-backend/assets/71065719/2152ea19-5af2-44ed-b767-0dc71ca6d5fd)
