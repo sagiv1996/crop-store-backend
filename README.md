@@ -15,7 +15,7 @@ Navigate to the project directory:
 
 Install the dependencies:
 
-    npm install
+    yarn
 
 - Create a .env file in the root directory of the project.
 - Add the following environment variables to the .env file:
@@ -32,27 +32,23 @@ Install the dependencies:
 
 Start the server:
     
-    npm run develop
+    yarn develop
 
-### `start`
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-start)
-
-```
-npm run start
-```
 
 ### `build`
 
 Build your admin panel. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-build)
 
-    npm run build
+    yarn build
 
 ### `start`
 
 Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-start)
 
-    npm run start
+```
+yarn start
+```
 
 ### `API Endpoints`
 The backend provides the following GraphQL API endpoints:
